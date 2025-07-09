@@ -1,0 +1,109 @@
+body {
+    opacity: 0;
+    transition: opacity 1s, transform 1s cubic-bezier(0.5,-1.1,0.1,1);
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+body.fade-out {
+    transform: translateX(-25%);
+}
+
+main {
+    display:flex;
+    justify-content: center;
+    min-height: 95vh;
+}
+
+.email-check-wrapper,
+.email-trem,
+.email-checkBox,
+.email-wrapper{
+    width:80%;
+}
+
+.email-check-wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid black;
+    border-radius: 10px;
+    margin-top:1rem;
+    position:relative;
+}
+.email-check-wrapper > button{
+    position:absolute;
+    top:1.5rem;
+    right:3rem;
+    width:3rem;
+    height:2rem;
+    font-size:1.5rem;
+}
+
+.email-check-wrapper > p{
+    font-size: 2.5rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+.email-trem{
+    border:1px solid black;
+    height: 300px;
+    max-height: 400px;
+    overflow-y: scroll;
+    white-space: pre-line;
+    padding: 10px;
+}
+
+.email-checkBox{
+    display:flex;
+    align-items:center;
+    margin-left:8%;
+    margin-top: 1rem;
+    gap:0.5rem;
+}
+
+.email-wrapper{
+    display:flex;
+    justify-content: space-between;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+.email-wrapper > p,
+.email-input-bottom-wrapper > ul > li{
+    font-size: 1.2rem;
+    margin-top:1rem;
+}
+.email-input-bottom-wrapper > ul >button{
+    width:8rem;
+    height:2rem;
+    margin-top:1rem;
+    font-size:1rem;
+    font-weight:bold;
+    
+}
+
+.email-input-bottom-wrapper{
+    display:flex;
+    flex-direction: column;
+}
+
+.email-input-bottom-wrapper > ul > li{
+    white-space: pre-line;
+}
+
+.email-input-wrapper{
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+
+.email-input-wrapper > input,
+.email-input-wrapper > select{
+    width:15rem;
+    height:3rem;
+    font-size:1.3rem;
+}

@@ -1,0 +1,124 @@
+body{
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 1s ease;
+    transform: scale(1);
+}
+
+body.show{
+    opacity: 1;
+}
+
+body.fade-out{
+    opacity: 0;
+    transform: scale(0);
+}
+
+.login-wrapper,
+.login-container,
+.login-container-side,
+.insert-id{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-wrapper{
+    min-height: 95vh;
+}
+
+.login-container{
+    display:flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 35rem;
+    border: 1px solid black;
+    border-radius: 5rem 0 10px 0;
+    position: relative;
+}
+
+.login-container-side,
+.password-wrapper{
+    width:40%;
+    height:80%;
+    flex-direction:column;
+    justify-content:space-around;
+    margin-left:5%;
+    position: absolute;
+    left: 0;
+    top: 10%;
+}
+
+.login-container-side{
+    transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0, 0, 0.5, 1.55);
+    transform: translateX(0);
+}
+
+.login-container-side.login-container-remove{
+    opacity:0;
+    transform: translateX(-50%);
+}
+
+.login-container-side > p{
+    font-size:2rem;
+    font-weight:bold;
+    text-align:center;
+    opacity: 1;
+}
+
+.login-container-input > div > input,
+.login-container-input > button{
+    width:80%;
+    height:2.5rem;
+    padding-left:1rem;
+    min-width: 20rem;
+}
+
+.login-container-input p{
+    font-size:1.2rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+.create-user{
+    text-align:center;
+}
+
+.login-container-qr{
+    width:50%;
+    height:80%;
+    border:1px solid black;
+    position: absolute;
+    right: 0;
+    top: 10%;
+}
+
+.password-wrapper{
+    display: flex;
+    align-items:center;
+    opacity:0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0,0,0.5,1.5), visibility 0.5s ease;
+    transform: translateX(50%);
+}
+
+.password-wrapper.password-wrapper-show{
+    opacity:1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.password-wrapper > p:first-child{
+    font-size:2rem;
+    font-weight: bold;
+}
+
+.insert-id{
+    width:200px;
+    height:40px;
+}
+
+.insert-id-text{
+    display: flex;
+    justify-content: space-around;
+    width:50px;
+}
+

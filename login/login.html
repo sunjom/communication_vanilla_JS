@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커뮤니케이션페이지</title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-container">
+            <div class="login-container-side">
+                <p>커뮤니케이션 로그인</p>
+                <div class="insert-id"></div>
+                <div class="login-container-input">
+                    <div>
+                        <p>아이디</p>
+                        <input id="userId" type="text" placeholder="아이디를 입력해주세요.">
+                        <p>아이디/비밀번호 찾기</p>
+                    </div>
+                    <button class="next-button">다음</button>
+                    <a href="/signUp/emailCheck.html"><p class="create-user">계정 만들기</p></a>
+                </div>
+            </div>
+            <div class="password-wrapper">
+                <p>커뮤니케이션 로그인</p>
+                <button class="insert-id" id="insert-id">
+                    <div class="insert-id-text">
+                        <p><</p>
+                        <p class="inserted-id"></p>
+                    </div>
+                </button>
+                <div class="login-container-input">
+                    <div>
+                        <p>비밀번호</p>
+                        <input id="userPassword" type="password" placeholder="비밀번호를 입력해주세요.">
+                        <p>아이디/비밀번호 찾기</p>
+                    </div>
+                    <button class="login-button">로그인</button>
+                    <a href="/signUp/emailCheck.css"><p class="create-user">계정 만들기</p></a>
+                </div>
+            </div>
+            <div class="login-container-qr">
+                qr로그인
+            </div>
+        </div>
+    </div>
+</body>
+<script src="login.js"></script>
+</html>
